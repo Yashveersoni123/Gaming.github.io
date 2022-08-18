@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  background-size: cover;
+}
+#logo {
+  width: 139px;
+  height: 33px;
+}
+.fa-solid {
+  display: none;
+}
+#icon2 {
+  display: none;
+}
+.btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: #343333;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: large;
+}
+.btn:hover {
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 76px;
+}
+
+.nav_bar_middle_button1 {
+  display: flex;
+  width: 32rem;
+  justify-content: space-evenly;
+}
+
+.other_nav_button {
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+}
+#second_btn1 {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: large;
+  color: blue;
+  cursor: pointer;
+}
+#second_btn2 {
+  font-size: large;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 5rem;
+  background-color: transparent;
+  color: blue;
+  border-color: blue;
+}
+.container {
+  height: 91vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(homepage1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subcontainer1 {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+}
+.subcontainer2 h3 {
+  color: #747474;
+}
+.subcontainer4 {
+  height: 56%;
+}
+#first-img {
+  width: 100%;
+  height: 100%;
+}
+.btn-12 {
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.422),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.401),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.foot {
+  height: 4vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+}
+
+@media screen and (max-width: 1100px) {
+  .nav_bar_middle_button1 {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .nav_bar_middle_button1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .fa-solid {
+    display: contents;
+    font-size: 217%;
+    cursor: pointer;
+  }
+
+  .nav_bar_middle_button1.responsive {
+    background-image: url(texture.jpg);
+    display: flex;
+    z-index: 1;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    border-radius: 5%;
+    font-weight: bolder;
+    height: 48vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .subcontainer1 h3 {
+    width: 21rem;
+    font-size: 27px;
+  }
+  .subcontainer2 h3 {
+    width: 19rem;
+    text-align: center;
+  }
+  .foot {
+    font-size: 11px;
+  }
+}

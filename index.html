@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="img" srcset="" id="logo" />
+
+      <div class="nav_bar_middle_button1" id="myTopnav">
+        <button type="button" id="btn1" class="btn">Home</button>
+        <button type="button" id="btn1" class="btn">About</button>
+        <button type="button" id="btn2" class="btn">Community</button>
+        <button type="button" id="btn3" class="btn">Store</button>
+      </div>
+      <div class="other_nav_button">
+        <button type="button" id="second_btn1">Login</button>
+        <button type="button" id="second_btn2">Play</button>
+        <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="subcontainer1"><h3>Are You Ready to Play The Game?</h3></div>
+      <div class="subcontainer2">
+        <h3>The next generation of players begins woth a Play Stattion 5</h3>
+      </div>
+      <div class="subcontainer3">
+        <button class="custom-btn btn-12">
+          <span>Discover</span><span>Click</span>
+        </button>
+      </div>
+      <div class="subcontainer4">
+        <img src="first.png" id="first-img" alt="" srcset="" />
+      </div>
+    </div>
+    <footer class="foot">
+      Made by Yashveer Soni @ Copyright All Right Reserved
+    </footer>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav_bar_middle_button1") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav_bar_middle_button1";
+      }
+    }
+  </script>
+</html>
